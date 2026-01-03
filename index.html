@@ -1,10 +1,315 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamid Raza | Sr. React Native Developer & Full Stack Engineer</title>
+    <meta name="description" content="Portfolio of Hamid Raza, a Senior React Native Developer & Full Stack Engineer specializing in high-performance mobile and web ecosystems.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <h1>Welcome to My Portfolio!</h1>
-    <p>This site is hosted with GitHub Pages.</p>
+    <div class="bg-mesh"></div>
+    
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Hamid<span>Raza</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Senior React Native<br>Developer</h1>
+                    <p class="hero-tagline">Crafting high-performance mobile ecosystems at <strong>CanDev Software Agency</strong>. Experienced Full Stack Engineer and Project Manager with a passion for scalable architecture.</p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn">View My Work</a>
+                        <a href="#contact" class="btn" style="background: transparent; border: 1px solid var(--primary); margin-left: 1rem;">Let's Talk</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">Professional Narrative</h2>
+                <div class="glass">
+                    <p style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 1.5rem;">
+                        I am a versatile software engineer with a proven track record of bridging the gap between technical excellence and strategic project management. My journey from a <strong>PHP Developer</strong> to a <strong>Senior React Native Developer</strong> and <strong>Project Manager</strong> has equipped me with a unique 360-degree perspective on product development.
+                    </p>
+                    <p style="color: var(--text-muted);">
+                        Today, I lead mobile initiatives at <strong>CanDev Software Agency</strong>, where I specialize in building robust, user-centric applications using the React Native ecosystem (Expo, Redux Toolkit, TypeScript). My background in full-stack engineering ensures that every mobile solution I build is backed by a scalable and secure backend architecture.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="container">
+                <h2 class="section-title">Career Milestones</h2>
+                <div class="experience-grid">
+                    <div class="glass card">
+                        <span class="skill-tag" style="align-self: flex-start; margin-bottom: 1rem;">Current</span>
+                        <p class="company">CanDev Software Agency</p>
+                        <h3>React Native Developer</h3>
+                        <p class="duration">January 2026 — Present</p>
+                        <p>Leading mobile development efforts using React Native, focusing on delivering high-impact, scalable mobile applications in an agile environment.</p>
+                    </div>
+                    <div class="glass card">
+                        <p class="company">My Digital Pixels</p>
+                        <h3>React Native Developer</h3>
+                        <p class="duration">March 2025 — January 2026</p>
+                        <p>Architected and led mobile application development in a high-growth remote environment, focusing on state-of-the-art React Native solutions.</p>
+                    </div>
+                    <div class="glass card">
+                        <p class="company">MITSOL</p>
+                        <h3>Full Stack Engineer</h3>
+                        <p class="duration">August 2024 — March 2025</p>
+                        <p>Delivered cross-platform web and mobile solutions, optimizing performance and ensuring seamless integration between frontend and backend services.</p>
+                    </div>
+                    <div class="glass card">
+                        <p class="company">Fort of solutions</p>
+                        <h3>Senior React Native Developer</h3>
+                        <p class="duration">September 2023 — September 2024</p>
+                        <p>Spearheaded the technical design of robust mobile applications, mentoring junior developers and ensuring code quality across major project releases.</p>
+                    </div>
+                    <div class="glass card">
+                        <p class="company">Mirrors Innovations</p>
+                        <h3>React Native Developer</h3>
+                        <p class="duration">February 2020 — March 2024</p>
+                        <p>Contributed to a wide range of mobile projects, implementing complex features and refining user experiences through iterative development.</p>
+                    </div>
+                    <div class="glass card">
+                        <p class="company">Mirrors Innovations</p>
+                        <h3>Project Manager</h3>
+                        <p class="duration">June 2020 — February 2023</p>
+                        <p>Orchestrated project lifecycles, managed cross-functional teams, and successfully delivered software products by aligning business goals with technical execution.</p>
+                    </div>
+                    <div class="glass card">
+                        <p class="company">Riasat Technologies</p>
+                        <h3>Junior PHP Developer</h3>
+                        <p class="duration">June 2019 — July 2019</p>
+                        <p>Backend internship focused on mastering PHP fundamentals and database schema design.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">Latest & Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Jobpoper Featured Case Study -->
+                    <div class="glass featured-project">
+                        <div class="featured-project-header">
+                            <span class="skill-tag" style="width: fit-content;">Featured Case Study</span>
+                            <h3 style="font-size: 2.5rem; margin-top: 1rem;">Jobpoper Mobile App</h3>
+                            <p class="company" style="font-size: 1.3rem;">Real-time Service Exchange & Job Marketplace</p>
+                            <p style="color: var(--text-muted); max-width: 800px;">
+                                A modern, location-based mobile application designed to connect users with service opportunities and jobs in real-time. 
+                                Jobpoper transforms the gig economy experience with intuitive maps and secure interactions.
+                            </p>
+                        </div>
+
+                        <div class="featured-project-content">
+                            <div class="project-gallery">
+                                <img src="assets/images/jobpoper/auth_mockup.jpg" alt="Jobpoper Authentication Mockup">
+                                <img src="assets/images/jobpoper/home_mockup.png" alt="Jobpoper Dashboard">
+                                <img src="assets/images/jobpoper/hotjobs_mockup.png" alt="Jobpoper Hot Jobs Screen">
+                                <img src="assets/images/jobpoper/detail_mockup.png" alt="Jobpoper Job Details">
+                                <img src="assets/images/jobpoper/list_mockup.png" alt="Jobpoper Listed Jobs Interface">
+                            </div>
+
+                            <div class="feature-details">
+                                <h4>Key Features</h4>
+                                <ul class="feature-list">
+                                    <li><strong>Real-time Map Integration:</strong> Interactive visualization of nearby job opportunities.</li>
+                                    <li><strong>Secure OTP Authentication:</strong> Robust phone-based verification via Twilio integration.</li>
+                                    <li><strong>Location-Based Discovery:</strong> Automated job filtering based on user proximity.</li>
+                                    <li><strong>Dynamic Profiles:</strong> Rich user profile management with media upload support.</li>
+                                    <li><strong>Instant Notifications:</strong> Real-time Firebase Messaging for job status updates.</li>
+                                    <li><strong>Performance Sync:</strong> Seamless state management with Redux Persist for offline access.</li>
+                                </ul>
+
+                                <h4>Technical Stack</h4>
+                                <div class="tech-stack-premium">
+                                    <span class="tech-item">React Native</span>
+                                    <span class="tech-item">Expo</span>
+                                    <span class="tech-item">Redux Toolkit</span>
+                                    <span class="tech-item">Twilio (Authy)</span>
+                                    <span class="tech-item">Firebase</span>
+                                    <span class="tech-item">Google Places API</span>
+                                    <span class="tech-item">Reanimated</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- School ERP Featured -->
+                    <div class="glass featured-project">
+                        <div class="featured-project-header">
+                            <span class="skill-tag" style="width: fit-content;">Featured Case Study</span>
+                            <h3 style="font-size: 2.5rem; margin-top: 1rem;">School ERP Mobile Application</h3>
+                            <p class="company" style="font-size: 1.3rem;">Multi-Tenant Educational Management Platform</p>
+                            <p style="color: var(--text-muted); max-width: 800px;">
+                                A comprehensive, enterprise-level mobile application built with React Native (Expo) that bridges the gap between educational institutions, parents, students, and service providers. 
+                                The platform features a sophisticated role-based architecture supporting over 8 distinct user types, each with tailored dashboards and functional suites.
+                            </p>
+                        </div>
+
+                        <div class="featured-project-content">
+                            <div class="project-gallery">
+                                <img src="assets/images/school-erp/Simulator Screenshot - iPhone 17 Pro - 2025-12-31 at 19.27.10.png" alt="School ERP Dashboard">
+                                <img src="assets/images/school-erp/Simulator Screenshot - iPhone 17 Pro - 2025-12-31 at 19.27.39.png" alt="School ERP Academic Management">
+                                <img src="assets/images/school-erp/Simulator Screenshot - iPhone 17 Pro - 2025-12-31 at 19.28.20.png" alt="School ERP Attendance System">
+                                <img src="assets/images/school-erp/Simulator Screenshot - iPhone 17 Pro - 2025-12-31 at 19.29.44.png" alt="School ERP Fee Management">
+                                <img src="assets/images/school-erp/Simulator Screenshot - iPhone 17 Pro - 2025-12-31 at 19.30.33.png" alt="School ERP Communication">
+                            </div>
+
+                            <div class="feature-details">
+                                <h4>Key Features & Modules</h4>
+                                <ul class="feature-list">
+                                    <li><strong>Multi-Role Ecosystem:</strong> Dynamic role-based authentication supporting School Admins, Teachers, Parents/Students, Transporters, Micro-Financers, and Vendors with tailored functional flows.</li>
+                                    <li><strong>Academic Management:</strong> Performance tracking with graphical insights, interactive attendance calendars, digitized exam schedules, and real-time homework/notice board updates.</li>
+                                    <li><strong>Financial Operations:</strong> Digital fee collection with history tracking, integrated wallet system, and unique micro-finance loan management for staff and parents.</li>
+                                    <li><strong>Vendor Marketplace:</strong> Dedicated portals for stationery and uniform sellers to manage inventories and process school orders.</li>
+                                    <li><strong>Communication Hub:</strong> Real-time chat system, multimedia gallery for school events, and automated push notifications for critical updates.</li>
+                                    <li><strong>Advanced Architecture:</strong> Modular routing with dynamic navigation, multiple Axios instances for auth and API calls, Redux Toolkit state management, and full TypeScript implementation.</li>
+                                </ul>
+
+                                <h4>Technical Stack</h4>
+                                <div class="tech-stack-premium">
+                                    <span class="tech-item">React Native (Expo SDK 52)</span>
+                                    <span class="tech-item">TypeScript</span>
+                                    <span class="tech-item">Redux Toolkit</span>
+                                    <span class="tech-item">Redux Persist</span>
+                                    <span class="tech-item">React Navigation</span>
+                                    <span class="tech-item">React Hook Form</span>
+                                    <span class="tech-item">Axios</span>
+                                    <span class="tech-item">Moment.js</span>
+                                    <span class="tech-item">Crypto-js</span>
+                                    <span class="tech-item">React Native Reanimated</span>
+                                </div>
+
+                                <h4>Technical Highlights</h4>
+                                <ul class="feature-list" style="margin-top: 1rem;">
+                                    <li><strong>Modular Routing:</strong> Dynamic BottomTabNavigator that adapts based on user role with createStaticNavigation architecture.</li>
+                                    <li><strong>Advanced API Layer:</strong> Specialized Axios instances (erpAuthInstance, erpAxiosInstance) with JWT injection via Redux-linked interceptors.</li>
+                                    <li><strong>State-Driven UI:</strong> Redux Toolkit Slices for global state management (auth, schoolDetail, loans, enrollments) ensuring data consistency across 250+ reusable components.</li>
+                                    <li><strong>Performance Optimized:</strong> Lazy loading, memoized components, and full TypeScript implementation for enterprise-level scalability.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Virtus Pro Featured -->
+                    <div class="glass featured-project">
+                        <div class="featured-project-header">
+                            <span class="skill-tag" style="width: fit-content;">Featured Case Study</span>
+                            <h3 style="font-size: 2.5rem; margin-top: 1rem;">Virtus Pro</h3>
+                            <p class="company" style="font-size: 1.3rem;">Professional Gastronomy & Catering Marketplace</p>
+                            <p style="color: var(--text-muted); max-width: 800px;">
+                                A high-performance, professional-grade mobile application designed for the industrial kitchen equipment industry. 
+                                Virtus Pro serves as a comprehensive catalog and management tool with a focus on precision and efficiency.
+                            </p>
+                        </div>
+
+                        <div class="featured-project-content">
+                            <div class="project-gallery">
+                                <img src="assets/images/virtus-pro/catalog_mockup.jpg" alt="Virtus Pro Catalog Mockup">
+                                <img src="assets/images/virtus-pro/home_mockup.png" alt="Virtus Pro Home Screen">
+                                <img src="assets/images/virtus-pro/detail_mockup.jpg" alt="Virtus Pro Product Detail">
+                                <img src="assets/images/virtus-pro/profile_mockup.jpg" alt="Virtus Pro Profile Design">
+                                <img src="assets/images/virtus-pro/profile_light.png" alt="Virtus Pro Profile Interface">
+                            </div>
+
+                            <div class="feature-details">
+                                <h4>Key Features</h4>
+                                <ul class="feature-list">
+                                    <li><strong>Multi-Guest Entry:</strong> Immediate catalog exploration with seamless account transition.</li>
+                                    <li><strong>Advanced SKU Management:</strong> Hierarchical category support for thousands of products.</li>
+                                    <li><strong>Technical Precision:</strong> Detailed spec displays (Voltage, Power, Dimensions) for engineers.</li>
+                                    <li><strong>Global Reach:</strong> Full i18n support for 6+ European languages.</li>
+                                    <li><strong>Security First:</strong> Integrated custom secure API and Google Sign-In.</li>
+                                    <li><strong>Real-time Sync:</strong> FCM integration for order tracking and news updates.</li>
+                                </ul>
+
+                                <h4>Technical Stack</h4>
+                                <div class="tech-stack-premium">
+                                    <span class="tech-item">React Native 0.81</span>
+                                    <span class="tech-item">TypeScript</span>
+                                    <span class="tech-item">Redux Toolkit</span>
+                                    <span class="tech-item">Axios</span>
+                                    <span class="tech-item">i18next</span>
+                                    <span class="tech-item">Firebase (FCM)</span>
+                                    <span class="tech-item">Vanilla CSS-in-JS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">Core Expertise</h2>
+                <div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                    <span class="skill-tag">React Native (Expo)</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">Redux Toolkit</span>
+                    <span class="skill-tag">Node.js / Express</span>
+                    <span class="skill-tag">MongoDB / SQL</span>
+                    <span class="skill-tag">Project Management</span>
+                    <span class="skill-tag">Team Leadership</span>
+                    <span class="skill-tag">Agile / Scrum</span>
+                    <span class="skill-tag">PHP / Laravel</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="glass" style="text-align: center; max-width: 600px; margin: 0 auto;">
+                    <h3 style="margin-bottom: 0.5rem;">Bachelor of Software Engineering</h3>
+                    <p class="company">Bahauddin Zakariya University</p>
+                    <p class="duration">2015 — 2019</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container contact-container">
+                <h2 class="section-title">Let's Build Something</h2>
+                <p style="margin-bottom: 3rem; color: var(--text-muted); font-size: 1.1rem;">
+                    Whether you have a mobile app idea or need a technical leader for your next big project, I'm just a click away.
+                </p>
+                <a href="https://www.linkedin.com/in/hamid-raza-86227b15b" target="_blank" class="btn">Connect on LinkedIn</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hamid Raza. Crafted with precision.</p>
+        </div>
+    </footer>
+
+    <!-- Image Lightbox Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
