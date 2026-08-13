@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hamidraza2788.github.io/github-portfolio/sitemap.xml
