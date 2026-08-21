@@ -22,13 +22,7 @@
   }
 
   /* ======================================================================
-     1. Footer year
-     ====================================================================== */
-  var yearEl = $("#year");
-  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
-
-  /* ======================================================================
-     2. Sticky nav + mobile drawer
+     1. Sticky nav + mobile drawer
      ====================================================================== */
   var nav       = $("#nav");
   var navToggle = $("#navToggle");
@@ -63,9 +57,9 @@
   });
 
   /* ======================================================================
-     3. Scrollspy — highlight the section currently in view
+     2. Scrollspy — highlight the section currently in view
      ====================================================================== */
-  var sections = $$("main section[id]");
+  var sections = $$("main section[id], footer[id]");
   var navAnchors = $$('#navLinks a[href^="#"], #navDrawer a[href^="#"]');
 
   if (sections.length && navAnchors.length && "IntersectionObserver" in window) {
@@ -129,9 +123,12 @@
   function coverMarkup(project) {
     var cover = project.cover || {};
     if (cover.type === "phones" && Array.isArray(cover.shots)) {
-      return '<div class="showcase">' + cover.shots.map(function (shot) {
-        return '<img src="' + esc(shot.src) + '" alt="' + esc(shot.alt) + '" loading="lazy" decoding="async" width="150" height="325">';
-      }).join("") + "</div>";
+      // The count modifier lets the CSS lay out 3-up (staggered phone cards)
+      // and 4-up (even, contained store shots) differently.
+      return '<div class="showcase showcase--' + cover.shots.length + '">' +
+        cover.shots.map(function (shot) {
+          return '<img src="' + esc(shot.src) + '" alt="' + esc(shot.alt) + '" loading="lazy" decoding="async">';
+        }).join("") + "</div>";
     }
     if (cover.src) {
       return '<img src="' + esc(cover.src) + '" alt="' + esc(cover.alt || project.title) +
@@ -147,10 +144,10 @@
     }).join("");
     if (featured) flags = '<span class="chip chip--brand">Featured</span>' + flags;
 
-    var tech = (project.tech || []).slice(0, featured ? 8 : 5).map(function (t) {
+    var tech = (project.tech || []).slice(0, 5).map(function (t) {
       return '<span class="chip chip--mono">' + esc(t) + "</span>";
     }).join("");
-    var extra = (project.tech || []).length - (featured ? 8 : 5);
+    var extra = (project.tech || []).length - 5;
     if (extra > 0) tech += '<span class="chip chip--mono">+' + extra + "</span>";
 
     var stores = (project.stores || []).map(function (store) {
@@ -175,7 +172,7 @@
     if (project.year)    meta.push(esc(project.year));
 
     return '' +
-      '<article class="project' + (featured ? " project--featured" : "") + '" ' +
+      '<article class="project" ' +
         'data-project="' + esc(project.id) + '" ' +
         'data-categories="' + esc((project.categories || []).join("|")) + '">' +
         '<div class="project__media">' +
