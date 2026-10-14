@@ -41,6 +41,208 @@ const CDN = "https://candevwebsite.blob.core.windows.net/assets/projects";
 const PROJECTS = [
   /* ------------------------------------------------------------------ */
   {
+    id: "buildsquad-workspace",
+    title: "Buildsquad Workspace",
+    subtitle: "Construction project management for builders & contractors",
+    description:
+      "An all-in-one workspace app where builders and contractors run their construction projects — estimates, BOQs, stages, materials, workers, payments and customer chat — from a single phone.",
+    categories: ["Mobile", "SaaS", "Enterprise"],
+    featured: true,
+    year: "2026",
+    role: "Full-Stack Developer",
+    company: "Independent side project",
+    cover: {
+      type: "phones",
+      shots: [
+        { src: "assets/images/buildsquad/01-brand.webp", alt: "Buildsquad Workspace branding splash" },
+        { src: "assets/images/buildsquad/02-dashboard.webp", alt: "Buildsquad Workspace home with quick actions and project overview modules" },
+        { src: "assets/images/buildsquad/05-progress.webp", alt: "Project stages screen with overall progress, estimated vs actual cost" },
+        { src: "assets/images/buildsquad/04-estimate.webp", alt: "New estimate form for a construction cost calculation" }
+      ]
+    },
+    tech: [
+      "React Native 0.77",
+      "Expo SDK 52",
+      "TypeScript",
+      "Redux + Redux Persist",
+      "Node.js / Express",
+      "MongoDB",
+      "Socket.IO",
+      "Firebase (FCM)",
+      "Twilio Verify",
+      "Cloudinary",
+      "Google Maps & Places",
+      "Expo Print (PDF)"
+    ],
+    overview:
+      "Construction businesses usually run on WhatsApp groups, notebooks and spreadsheets — costs drift, stages slip and nobody has the full picture. Buildsquad Workspace puts the whole job in one place: a contractor can price a house in minutes, turn it into a project for a customer, plan it stage by stage, track materials, labour and payments against budget, and keep the customer updated through a companion customer app. It is one part of a three-app ecosystem — workspace app, customer app and a shared Node.js backend — and supports both independent houses and multi-block apartment projects.",
+    features: [
+      {
+        title: "Instant cost estimates",
+        text: "Enter plot size, built-up area, floors, structure type, city and quality tier to get a full construction estimate, then export it as a branded PDF."
+      },
+      {
+        title: "Custom construction rates",
+        text: "Contractors keep their own per-sq.ft rates for each trade — civil, electrical, plumbing, flooring, doors & windows — in Basic, Standard and Premium tiers."
+      },
+      {
+        title: "BOQ from a 2D plan",
+        text: "Upload a floor plan and a step-by-step wizard detects rooms, dimensions, doors and windows, applies room-wise specs and prices, and exports the BOQ to PDF or Excel."
+      },
+      {
+        title: "Stage-wise progress tracking",
+        text: "Projects broken into stages and tasks with start, estimated and actual end dates, estimated vs actual cost, delay reasons and photo / video / audio progress logs."
+      },
+      {
+        title: "Materials, workers & payments",
+        text: "Material inventory by folder with budgets, worker profiles with bulk attendance and wage payments, and customer payment tracking with reminders."
+      },
+      {
+        title: "Apartment projects",
+        text: "Blocks, floors and flats generated automatically, a buyer assigned to each flat, and per-flat payments and progress updates that each buyer sees only for their own flat."
+      },
+      {
+        title: "Customer onboarding in seconds",
+        text: "Create a project straight from a customer's phone number — if they are new, an account is created for them and linked to the companion customer app."
+      },
+      {
+        title: "Real-time chat & notifications",
+        text: "Socket.IO chat with each customer and Firebase push notifications for enquiries, reminders and project updates."
+      }
+    ],
+    highlights: [
+      {
+        title: "Team access control",
+        text: "Owner, admin and employee roles with permissions granted per feature, per project and even per document, task or material folder."
+      },
+      {
+        title: "Secure phone-first auth",
+        text: "Twilio Verify OTP sign-up with an MPIN for fast repeat logins and JWT-secured API calls."
+      },
+      {
+        title: "Guided product tours",
+        text: "In-app walkthroughs for Home, BOQ and Materials that new contractors can replay at any time."
+      },
+      {
+        title: "Demo mode",
+        text: "A single feature flag swaps every screen to realistic sample data for sales demos and events, without touching auth or the live backend."
+      },
+      {
+        title: "Large, modular codebase",
+        text: "460+ TypeScript modules across nearly 60 feature areas, with Redux Persist keeping the app quick and usable between sessions."
+      }
+    ],
+    gallery: [
+      { src: "assets/images/buildsquad/01-brand.webp",       full: "assets/images/buildsquad/full/01-brand.webp",       alt: "Buildsquad Workspace branding splash screen" },
+      { src: "assets/images/buildsquad/02-dashboard.webp",   full: "assets/images/buildsquad/full/02-dashboard.webp",   alt: "Home dashboard with chat, call, payments and status quick actions plus project modules" },
+      { src: "assets/images/buildsquad/03-add-project.webp", full: "assets/images/buildsquad/full/03-add-project.webp", alt: "Add Project form that creates a customer account from a phone number" },
+      { src: "assets/images/buildsquad/04-estimate.webp",    full: "assets/images/buildsquad/full/04-estimate.webp",    alt: "New Estimate construction cost calculator with plot and construction details" },
+      { src: "assets/images/buildsquad/05-progress.webp",    full: "assets/images/buildsquad/full/05-progress.webp",    alt: "Project Stage screen tracking progress, dates and estimated vs actual cost" },
+      { src: "assets/images/buildsquad/06-rates.webp",       full: "assets/images/buildsquad/full/06-rates.webp",       alt: "Construction Rates screen with Basic, Standard and Premium per sq.ft rates" }
+    ],
+    links: {},
+    stores: [
+      { name: "Google Play" },
+      { name: "App Store" }
+    ]
+  },
+
+  /* ------------------------------------------------------------------ */
+  {
+    id: "buildsquad-customer",
+    title: "Buildsquad",
+    subtitle: "Find contractors & follow your build — customer app",
+    description:
+      "The homeowner side of the Buildsquad platform: discover verified contractors and real projects nearby, raise an enquiry in a few taps, and follow your construction live — progress, documents, materials and chat.",
+    categories: ["Mobile", "Marketplace"],
+    featured: true,
+    year: "2026",
+    role: "Full-Stack Developer",
+    company: "Independent side project",
+    cover: {
+      type: "phones",
+      shots: [
+        { src: "assets/images/buildsquad-customer/01-brand.webp", alt: "Buildsquad customer app branding splash" },
+        { src: "assets/images/buildsquad-customer/02-home.webp", alt: "Buildsquad home with categories and contractors near the user" },
+        { src: "assets/images/buildsquad-customer/03-contractor-profile.webp", alt: "Contractor profile with rating, projects and services" },
+        { src: "assets/images/buildsquad-customer/05-projects.webp", alt: "Browse real construction projects by trusted contractors" }
+      ]
+    },
+    tech: [
+      "React Native 0.77",
+      "Expo SDK 52",
+      "TypeScript",
+      "Redux + Redux Persist",
+      "Node.js / Express",
+      "MongoDB",
+      "Socket.IO",
+      "Firebase (FCM)",
+      "Twilio Verify",
+      "Google Maps & Places",
+      "Cloudinary"
+    ],
+    overview:
+      "Hiring a builder usually means word-of-mouth recommendations and then weeks of chasing phone calls to find out what is happening on site. Buildsquad gives homeowners and flat buyers one app to find a trusted contractor and then watch their project come together. It is the customer half of the Buildsquad ecosystem: everything a contractor logs in the Buildsquad Workspace app — stages, progress photos, documents, materials — shows up here in real time, filtered to what the customer is allowed to see.",
+    features: [
+      {
+        title: "Contractors near you",
+        text: "Location-aware home feed with service categories (masonry, carpentry, painting, roofing and more) and contractors near the chosen location, with ratings and whether they also serve outside their city."
+      },
+      {
+        title: "Rich contractor profiles",
+        text: "About, portfolio, services offered, experience, rating and completed projects, with one-tap call, schedule-a-call and a wishlist to save favourites."
+      },
+      {
+        title: "Raise an enquiry in a few taps",
+        text: "Pick the contractor's services, name the project, choose Individual house or Apartment, add a description and location — and the contractor is notified instantly."
+      },
+      {
+        title: "Discover real projects",
+        text: "Browse completed and ongoing projects with photos, location, builder and amenities, and register interest directly from the listing."
+      },
+      {
+        title: "Live project tracking",
+        text: "Follow each enquiry once it becomes a project: stage-wise progress with photos and videos, shared documents and the materials being used."
+      },
+      {
+        title: "Chat & notifications",
+        text: "Real-time Socket.IO chat with the contractor, including media, plus push notifications with per-category notification preferences."
+      }
+    ],
+    highlights: [
+      {
+        title: "Two apps, one backend",
+        text: "Shares a Node.js / MongoDB backend with the contractor app; MongoDB change streams and Socket.IO push new enquiries and updates between the two apps instantly."
+      },
+      {
+        title: "Role-aware visibility",
+        text: "Customers see only their own project's updates — internal costs, labour and team data stay inside the contractor's workspace."
+      },
+      {
+        title: "Guest browsing",
+        text: "A guest home lets people explore contractors and projects before signing up with phone OTP and an MPIN."
+      },
+      {
+        title: "Built-in admin module",
+        text: "Admin screens for managing categories, home banners, customers, contractors, enquiries and subscriptions from the same codebase."
+      }
+    ],
+    gallery: [
+      { src: "assets/images/buildsquad-customer/01-brand.webp",              full: "assets/images/buildsquad-customer/full/01-brand.webp",              alt: "Buildsquad customer app branding splash screen" },
+      { src: "assets/images/buildsquad-customer/02-home.webp",               full: "assets/images/buildsquad-customer/full/02-home.webp",               alt: "Home screen with service categories and contractors near the user" },
+      { src: "assets/images/buildsquad-customer/03-contractor-profile.webp", full: "assets/images/buildsquad-customer/full/03-contractor-profile.webp", alt: "Contractor profile with about, portfolio, schedule a call and raise an enquiry" },
+      { src: "assets/images/buildsquad-customer/04-enquiry.webp",            full: "assets/images/buildsquad-customer/full/04-enquiry.webp",            alt: "Raise an Enquiry form with services, project name and project type" },
+      { src: "assets/images/buildsquad-customer/05-projects.webp",           full: "assets/images/buildsquad-customer/full/05-projects.webp",           alt: "Projects listing showing residential projects with amenities" }
+    ],
+    links: {},
+    stores: [
+      { name: "Google Play" },
+      { name: "App Store" }
+    ]
+  },
+
+  /* ------------------------------------------------------------------ */
+  {
     id: "jobpopper",
     title: "MakeMy Task",
     subtitle: "On-demand services marketplace",
